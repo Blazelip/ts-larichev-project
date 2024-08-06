@@ -1,6 +1,10 @@
+import { FFmpegExecutor } from "./commands/ffmpeg/ffmpeg.executor.js";
+import { ConsoleLoggger } from "./out/console-logger.service.js";
+
 export class App {
-  run() {
-    console.log('Done');
+  async run() {
+    const logger = ConsoleLoggger.getInstance();
+    await new FFmpegExecutor(logger).execute();
   }
 }
 

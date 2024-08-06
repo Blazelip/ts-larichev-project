@@ -11,9 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.1.0",
     "typescript": "^5.5.3"
   },
   "dependencies": {
-    "inquirer": "^10.0.4"
+    "inquirer": "8.2.0"
   }
 }
